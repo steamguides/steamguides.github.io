@@ -666,4 +666,231 @@ footer {
     padding: 24px 19px;
   }
 }
+
+/* ===== STEAM ARTICLE PAGE DESIGN ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f3f6fc;
+    color: #26334d;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.8;
+}
+
+/* HEADER */
+
+.site-header {
+    width: 100%;
+    min-height: 68px;
+    padding: 12px max(calc((100% - 1050px) / 2), 25px);
+    box-sizing: border-box;
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    color: #192b55;
+    font-size: 19px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.site-header nav a {
+    color: #4059e8;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 17px;
+    background: #eef1ff;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.site-header nav a:hover {
+    background: #4059e8;
+    color: #ffffff;
+}
+
+/* ARTICLE MAIN CONTAINER */
+
+.article-wrap {
+    width: calc(100% - 40px);
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 45px 55px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e1e8f5;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(36, 57, 100, 0.07);
+}
+
+/* CATEGORY LABEL */
+
+.article-wrap .eyebrow {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 6px 13px;
+    color: #4059e8;
+    background: #eef1ff;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ARTICLE TITLE */
+
+.article-wrap h1 {
+    color: #17245e;
+    font-size: clamp(29px, 4vw, 39px);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -1.2px;
+    margin: 8px 0 20px;
+}
+
+/* KEYWORD LABEL */
+
+.updated {
+    display: inline-block;
+    padding: 7px 13px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background: #f0f3ff;
+    color: #4059c9;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* PARAGRAPHS */
+
+.article-wrap p {
+    color: #58667e;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 16px 0;
+}
+
+/* SECTION HEADINGS */
+
+.article-wrap h2 {
+    color: #263fa6;
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9edfa;
+    line-height: 1.4;
+}
+
+.article-wrap h3 {
+    color: #26375d;
+    font-size: 18px;
+    font-weight: 750;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* LIST DESIGN */
+
+.article-wrap ul,
+.article-wrap ol {
+    padding-left: 25px;
+    margin: 18px 0;
+}
+
+.article-wrap li {
+    color: #58667e;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-left: 5px;
+    margin-bottom: 8px;
+}
+
+/* SECURITY NOTICE */
+
+.notice {
+    margin: 30px 0;
+    padding: 18px 22px;
+    background: #eef3ff;
+    border-left: 4px solid #4059e8;
+    border-radius: 9px;
+    color: #405078;
+    font-size: 14px;
+}
+
+/* BACK TO ARTICLES */
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 18px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #526df0, #304bd0);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.back-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #4059e833;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    padding: 25px 15px;
+    background: #ffffff;
+    border-top: 1px solid #e5eaf4;
+    text-align: center;
+    color: #8290a8;
+    font-size: 12px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .site-header {
+        padding: 14px 18px;
+        min-height: 60px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .article-wrap {
+        width: calc(100% - 24px);
+        margin: 22px auto;
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .article-wrap h1 {
+        font-size: 28px;
+    }
+
+    .article-wrap h2 {
+        font-size: 20px;
+    }
+
+    .article-wrap p,
+    .article-wrap li {
+        font-size: 14px;
+    }
+}
+
 </style>
